@@ -1,0 +1,10 @@
+1) Suppose I wanted to find protein alignments related to an amino acid sequence, which version of BLAST should I run?
+1A) blastn
+1B-C) blastp
+1C) blastx
+1D) tblastn
+
+2) What is the reverse complement of the start codon, methionine (AUG)?
+2-C) CAU
+
+3) 
