@@ -16,6 +16,10 @@ Question Ideas:
 
 3) Identify phylogeny algorithm calculation concepts like distance-based modeling
 
+I am considering making it so that a text file holds a repository of questions so that 
+it draws from the text file, this should keep the .py file short and sweet
+This will require reading and opening files.
+
 Idea inspiration: Quizlet
 
 Key concepts: basic functions and validation checkpoints
