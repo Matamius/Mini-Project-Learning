@@ -1,0 +1,23 @@
+This is a slight bit of code I am working on, it is a simple 10 question quiz 
+that is designed to be played in a python console. As I understand more about 
+GUI's and API's I will attempt to make it into a little executable.
+
+Stage one goal: Fill with 10 questions about bioinformatics and principles
+Stage two goal: Add more questions
+Stage three goal: As more questions are added, randomize it.
+
+
+Question Ideas: 
+1) Have some questions that randomize prompt (i.e., DNA seq) and 
+   have user input be the reverse complement 
+  a) for now just have static prompt, will need to learn how to have this be randomized
+
+2) A-D questions involving best choice databases to retrieve information from
+
+3) Identify phylogeny algorithm calculation concepts like distance-based modeling
+
+Idea inspiration: Quizlet
+
+Key concepts: basic functions and validation checkpoints
+
+Imports: sys
