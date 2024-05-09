@@ -22,6 +22,6 @@ This will require reading and opening files.
 
 Idea inspiration: Quizlet
 
-Key concepts: basic functions and validation checkpoints
+Key concepts: basic functions, validation checkpoints, read from file   
 
 Imports: sys
