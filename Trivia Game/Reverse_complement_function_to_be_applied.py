@@ -8,17 +8,23 @@ def reverse_complement(sequence):
     complement_DNA_bases = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'} ## simple dictionary to identify complementary bases in DNA
     complement_RNA_bases = {'A': 'U', 'U': 'A', 'C': 'G', 'G': 'C'} ## copied from above to account for RNA bases
     reverse_comp_seq = '' ## empty variable
-
-## will need code here to read sequence and identify if it is DNA or RNA (look for U to be RNA)
-## if it doesn't encounter a U, default to DNA
-## return reverse_complement according to sequence nature
-    
     for base in reversed(sequence_upper): ## reverse the sequence and look at each character in reversed sequence
-        reverse_comp_seq += complement_DNA_bases[base] ## grow the rev_comp_seq
-    return reverse_comp_seq ## return for the function
+        if base not in 'ACGTU':
+            raise ValueError("Womp womp, only DNA/RNA bases (ACGTU) are allowed.")
+        if "U" in sequence_upper:  
+            reverse_comp_seq += complement_RNA_bases[base] ## grow the rev_comp_seq
+        else: 
+            reverse_comp_seq += complement_DNA_bases[base]
+    return reverse_comp_seq
 
 
 
 ## for me to test the progress ... 
-omg_an_sequence = input("Input 5 base long sequence (DNA or RNA): ")
-print(reverse_complement(omg_an_sequence))
+while True:
+    try:
+        omg_an_sequence = input("Input 5 base long sequence (DNA or RNA): ")
+        print(reverse_complement(omg_an_sequence))
+        break
+    except ValueError as e:
+        print("Error", e)
+    
